@@ -38,7 +38,7 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen text-center p-24 light:bg-slate-50">
+    <main className="min-h-screen text-center p-24 bg-slate-50 dark:bg-gray-800">
       <div className='text-3xl font-bold my-8'>Xahau B2M Rate</div>
       <div className='mb-4'>Current LedgerIndex: <br />
         <span className='text-xl'>{ledgerIndex?.toLocaleString()}</span>
