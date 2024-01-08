@@ -31,7 +31,7 @@ export default function Home() {
     if (ledgerIndex < ledgerIndex_1) {
       return '1'
     } else if (ledgerIndex < ledgerIndex_2) {
-      return BigNumber(ledgerIndex_2).minus(ledgerIndex).div(BigNumber(ledgerIndex_2).minus(ledgerIndex_1)).toFixed(4)
+      return BigNumber(ledgerIndex_2).minus(ledgerIndex).div(BigNumber(ledgerIndex_2).minus(ledgerIndex_1)).toFixed(4, BigNumber.ROUND_DOWN)
     } else {
       return '0'
     }
